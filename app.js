@@ -17,6 +17,7 @@ function agregarAmigo(){
             document.getElementById('listaAmigosUl').innerHTML += `<li>${listaAmigos[listaAmigos.length-1]}</li>`;
         } 
     }
+    limpiarCaja();
 }
 
 function sorteoAmigoSecreto(){
@@ -33,4 +34,8 @@ function sorteoAmigoSecreto(){
             document.getElementById('resultado').innerHTML = `<li>${amigoSecreto}</li>`;
         }
     }
+}
+
+function limpiarCaja(){
+    document.getElementById('amigo').value = '';
 }
